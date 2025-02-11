@@ -11,3 +11,14 @@ Gerçekleştirilen her işlem sonucunda, kullanıcıya dinamik bir alert mesajı
 
 ### Controller Yapısı ve Performans Optimizasyonu
 Projede Controller içinde Model kullanımı için Constructor Injection (Bağımlılık Enjeksiyonu) yöntemi tercih edilmiştir. Böylece her metod içinde tekrar tekrar model çağrılmasının önüne geçilmiş, performans iyileştirmesi sağlanmıştır. Bu yaklaşım sayesinde kod okunabilirliği ve sürdürülebilirliği artırılmış, uygulamanın daha verimli çalışması sağlanmıştır.
+
+## Proje Çalıştırma
+Projenin kendi bilgisayarınızda sorunsuz çalışabilmesi için öncelikle .env.example dosyasını kopyalayarak .env olarak yeniden adlandırın. Daha sonra, kendi veritabanı bilgilerinizi .env dosyasında yapılandırın.
+
+Tüm tabloların veritabanına aktarılması için aşağıdaki komutu çalıştırmanız gerekmektedir:
+`php artisan migrate`
+
+Artık tüm ayarlar hazır olduğuna göre `php artisan serve` komutunu çalıştırıp, login olarak projeyi inceleyebilirsiniz.
+
+Hasan Basri Akcıl
+Full-Stack Developer
